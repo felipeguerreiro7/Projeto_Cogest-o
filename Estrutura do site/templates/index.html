@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Viabilidade</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Análise de Viabilidade Econômica</h1>
+        <form id="analise-form">
+            <label>Investimento Inicial (R$):</label>
+            <input type="number" id="investimento_inicial" required>
+            
+            <label>Receita Anual Estimada (R$):</label>
+            <input type="number" id="receita_anual" required>
+            
+            <label>Custos Anuais (R$):</label>
+            <input type="number" id="custo_anual" required>
+            
+            <label>Taxa de Crescimento Anual (%):</label>
+            <input type="number" id="taxa_crescimento" required>
+            
+            <label>Taxa de Desconto Anual (%):</label>
+            <input type="number" id="taxa_desconto" required>
+            
+            <label>Número de Anos:</label>
+            <input type="number" id="anos" required>
+            
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultados"></div>
+    </div>
+</body>
+</html>
